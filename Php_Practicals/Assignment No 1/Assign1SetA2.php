@@ -1,0 +1,59 @@
+<?php 
+include('Assign1SetA2i.php');
+$a=$_POST['n1'];
+$b=$_POST['n2'];   
+$c=$_POST['ch'];
+switch($c)
+{
+    case 'a':
+        if(empty($b))
+        {
+            add($a);
+        }
+        else
+        {
+           add($a,$b);
+        }
+        break;
+    case 's':
+        if(empty($b))
+        {
+            sub($a);
+        }
+        else
+        {
+           sub($a,$b);
+        }
+        break;
+    case 'm':
+        if(empty($b))
+        {
+            mul($a);
+        }
+        else
+        {
+           mul($a,$b);
+        }
+        break;
+    case 'd':
+        if(empty($b))
+        {
+            div($a);
+        }
+        else
+        {
+           div($a,$b);
+        }
+        break;
+    case 'c':
+        if(empty($b))
+        {
+            comp($a);
+        }
+        else
+        {
+           comp($a,$b);
+        }
+        break;
+}
+?>

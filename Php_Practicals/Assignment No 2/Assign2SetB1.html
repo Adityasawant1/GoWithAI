@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <form action="Assign2SetB1.php" method="post">
+        First String:
+        <input type="text" id="t1" name="t1" required><br><br>
+
+        Second String:
+        <input type="text" id="t2" name="t2" required><br><br>
+ 
+        Choose Operation:<br><br>
+        Compare with ==<input type="radio" name="o" value="ce" checked><br><br>
+        Compare with strcmp<input type="radio" name="o" value="cs"><br><br>
+        Append second to first<input type="radio" name="o" value="a"><br><br>
+        Reverse from position in first<input type="radio" name="o" value="r"><br><br>
+
+        Position to Reverse (if reversing):<input type="number" id="position" name="p" min="0" value="0"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
